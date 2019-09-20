@@ -1,0 +1,69 @@
+Traceback (most recent call last):
+  File "cyx.py", line 18, in <module>
+    from gensim.models import Word2Vec
+  File "/root/anaconda3/lib/python3.6/site-packages/gensim/__init__.py", line 6, in <module>
+    from gensim import parsing, matutils, interfaces, corpora, models, similarities, summarization, utils  # noqa:F401
+  File "/root/anaconda3/lib/python3.6/site-packages/gensim/models/__init__.py", line 8, in <module>
+    from .hdpmodel import HdpModel  # noqa:F401
+  File "/root/anaconda3/lib/python3.6/site-packages/gensim/models/hdpmodel.py", line 46, in <module>
+    from gensim.models import basemodel, ldamodel
+  File "/root/anaconda3/lib/python3.6/site-packages/gensim/models/ldamodel.py", line 51, in <module>
+    from scipy.misc import logsumexp
+ImportError: cannot import name 'logsumexp'
+[LightGBM] [Info] Total Bins 279
+[LightGBM] [Info] Number of data: 4798, number of used features: 6
+[LightGBM] [Fatal] GPU Tree Learner was not enabled in this build.
+Please recompile with CMake option -DUSE_GPU=1
+Traceback (most recent call last):
+  File "cyx.py", line 112, in <module>
+    feval=f1_weighted)
+  File "/root/anaconda3/lib/python3.6/site-packages/lightgbm/engine.py", line 192, in train
+    booster = Booster(params=params, train_set=train_set)
+  File "/root/anaconda3/lib/python3.6/site-packages/lightgbm/basic.py", line 1489, in __init__
+    ctypes.byref(self.handle)))
+  File "/root/anaconda3/lib/python3.6/site-packages/lightgbm/basic.py", line 45, in _safe_call
+    raise LightGBMError(decode_string(_LIB.LGBM_GetLastError()))
+lightgbm.basic.LightGBMError: GPU Tree Learner was not enabled in this build.
+Please recompile with CMake option -DUSE_GPU=1
+[LightGBM] [Info] Total Bins 279
+[LightGBM] [Info] Number of data: 4798, number of used features: 6
+[LightGBM] [Info] Total Bins 282
+[LightGBM] [Info] Number of data: 4798, number of used features: 6
+[LightGBM] [Info] Total Bins 282
+[LightGBM] [Info] Number of data: 4801, number of used features: 6
+[LightGBM] [Info] Total Bins 281
+[LightGBM] [Info] Number of data: 4801, number of used features: 6
+[LightGBM] [Info] Total Bins 279
+[LightGBM] [Info] Number of data: 4802, number of used features: 6
+Training until validation scores don't improve for 100 rounds.
+[50]	train's multi_logloss: 1.23428	train's f1_weighted: 0.555998	valid's multi_logloss: 1.2552	valid's f1_weighted: 0.513992
+[100]	train's multi_logloss: 1.14618	train's f1_weighted: 0.56409	valid's multi_logloss: 1.18438	valid's f1_weighted: 0.516921
+[150]	train's multi_logloss: 1.09184	train's f1_weighted: 0.569242	valid's multi_logloss: 1.14581	valid's f1_weighted: 0.520909
+[200]	train's multi_logloss: 1.0545	train's f1_weighted: 0.571251	valid's multi_logloss: 1.12315	valid's f1_weighted: 0.518387
+[250]	train's multi_logloss: 1.02779	train's f1_weighted: 0.578429	valid's multi_logloss: 1.1106	valid's f1_weighted: 0.519243
+Early stopping, best iteration is:
+[177]	train's multi_logloss: 1.07024	train's f1_weighted: 0.569769	valid's multi_logloss: 1.13223	valid's f1_weighted: 0.521471
+Training until validation scores don't improve for 100 rounds.
+[50]	train's multi_logloss: 1.2337	train's f1_weighted: 0.563797	valid's multi_logloss: 1.25738	valid's f1_weighted: 0.497281
+[100]	train's multi_logloss: 1.14453	train's f1_weighted: 0.572586	valid's multi_logloss: 1.18874	valid's f1_weighted: 0.501445
+[150]	train's multi_logloss: 1.08926	train's f1_weighted: 0.577165	valid's multi_logloss: 1.15087	valid's f1_weighted: 0.496129
+[200]	train's multi_logloss: 1.05177	train's f1_weighted: 0.582172	valid's multi_logloss: 1.12891	valid's f1_weighted: 0.496369
+Early stopping, best iteration is:
+[123]	train's multi_logloss: 1.11597	train's f1_weighted: 0.572756	valid's multi_logloss: 1.16861	valid's f1_weighted: 0.50404
+Training until validation scores don't improve for 100 rounds.
+[50]	train's multi_logloss: 1.23418	train's f1_weighted: 0.559633	valid's multi_logloss: 1.25719	valid's f1_weighted: 0.512643
+[100]	train's multi_logloss: 1.14587	train's f1_weighted: 0.564602	valid's multi_logloss: 1.18693	valid's f1_weighted: 0.506237
+Early stopping, best iteration is:
+[34]	train's multi_logloss: 1.27239	train's f1_weighted: 0.559069	valid's multi_logloss: 1.28878	valid's f1_weighted: 0.520151
+Training until validation scores don't improve for 100 rounds.
+[50]	train's multi_logloss: 1.23535	train's f1_weighted: 0.555434	valid's multi_logloss: 1.25045	valid's f1_weighted: 0.515665
+[100]	train's multi_logloss: 1.14744	train's f1_weighted: 0.562825	valid's multi_logloss: 1.17771	valid's f1_weighted: 0.513491
+[150]	train's multi_logloss: 1.09343	train's f1_weighted: 0.568587	valid's multi_logloss: 1.13755	valid's f1_weighted: 0.513483
+Early stopping, best iteration is:
+[57]	train's multi_logloss: 1.21991	train's f1_weighted: 0.557001	valid's multi_logloss: 1.23712	valid's f1_weighted: 0.517844
+Training until validation scores don't improve for 100 rounds.
+[50]	train's multi_logloss: 1.23703	train's f1_weighted: 0.553683	valid's multi_logloss: 1.25136	valid's f1_weighted: 0.522017
+[100]	train's multi_logloss: 1.15017	train's f1_weighted: 0.56616	valid's multi_logloss: 1.17781	valid's f1_weighted: 0.524377
+[150]	train's multi_logloss: 1.09642	train's f1_weighted: 0.570804	valid's multi_logloss: 1.13586	valid's f1_weighted: 0.524653
+Early stopping, best iteration is:
+[96]	train's multi_logloss: 1.15582	train's f1_weighted: 0.564081	valid's multi_logloss: 1.18239	valid's f1_weighted: 0.52817
